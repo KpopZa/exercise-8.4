@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 8.4 - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Exercise 8.4</h1>
+
+      <nav class="site-nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <!-- นักเรียนจะเพิ่ม profile.html ใน branch profile -->
+        <a class="nav-link" href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2 class="hero-title">Git Rebase Practice</h2>
+      <p class="hero-subtitle">
+        ฝึกทำงานบน branch แล้ว rebase ให้ตาม main ล่าสุด
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="profile.html">Go to Profile Form</a>
+        <a class="btn btn-outline" href="contact.html">Contact Page</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Task</h3>
+        <p>
+          นักเรียนจะสร้าง branch ชื่อ <strong>profile</strong> และสร้างหน้า profile เป็นฟอร์มสำหรับกรอกข้อมูล
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Team Scenario</h3>
+        <p>
+          ระหว่างที่นักเรียนทำงาน ครูจะ push งานเข้า <strong>main</strong> เพิ่มเติม
+          เพื่อให้นักเรียนต้อง <strong>rebase</strong>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Rule</h3>
+        <p>
+          ทำงานบน branch เท่านั้น แล้วค่อยรวม/ส่งขึ้น remote ตามขั้นตอนที่กำหนด
+        </p>
+      </article>
+    </section>
+
+    <!-- NOTE: โซนนี้ตั้งใจให้ครูแก้ข้อความได้ เพื่อสร้าง conflict แบบเบา -->
+    <section class="notice">
+      <h3>Notice</h3>
+      <p class="notice-text">
+        Current Notice: Welcome! (ครูอาจอัปเดตข้อความนี้ใน main ระหว่างที่นักเรียนทำงาน)
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Sprouting Tech Academy</p>
+      <p class="muted">Exercise 8.4 - Rebase Practice</p>
+    </div>
+  </footer>
+
+</body>
+</html>

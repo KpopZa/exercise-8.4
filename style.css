@@ -1,0 +1,166 @@
+/* ===== Base / Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #111827;
+  color: #fff;
+  padding: 16px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+}
+
+.nav-link.active {
+  background: rgba(255,255,255,0.18);
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  margin: 22px 0;
+  border: 1px solid #e5e7eb;
+}
+
+.hero-title {
+  margin: 0 0 6px;
+}
+
+.hero-subtitle {
+  margin: 0 0 16px;
+  color: #6b7280;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn.btn-outline {
+  background: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+/* ===== Grid / Cards ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.page-title {
+  margin: 22px 0 12px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* ===== Notice (conflict-friendly text area) ===== */
+.notice {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 18px 0;
+}
+
+.notice-text {
+  margin: 0;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  margin-top: 28px;
+  background: #0b1220;
+  color: #fff;
+  padding: 16px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 820px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
